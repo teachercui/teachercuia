@@ -1,0 +1,40 @@
+1、创建本版库
+	cat file  查看文件内容
+	git init   	 把目录变成git可管理的仓库
+	ls -ah		 查看隐藏的.gitm目录
+	git add file  把本地文件添加到git仓库    (把文件添加到暂存区)
+	git commit -m  “本次提交说明”  把文件提交到git仓库 (从暂存区提交到分支)
+	git status      查看仓库状态
+	git diff        查看修改内容
+	
+2、版本回退（时光穿梭机）
+	HEAD标识当前版本
+	git log         查看历史记录
+	git log  --pretty=oneline   一行查看历史记录
+	git reset --hard HEAD~     回退到上一个版本  HEAD~~返回上上一个版本。HEAD~100返回到第一百个版本。
+	git reset --hard commtie id  回退到指定的版本
+	git reflog                    用来记录每次一输入的命令
+	git diff HEAD -- readme.txt   命令可以查看工作区和版本库里面最新版本的区别
+	
+3、管理修改
+	git checkout -- file        撤销修改一定要加--
+	git reset HEAD              从暂存区撤掉放回工作区  HEAD表示最新版本
+	git restore --staged <file>  将暂存区的文件从暂存区撤出，但不会更改文件
+	git restore <file>           将在工作空间但是不在暂存区的文件撤销更改
+
+4、删除文件
+	git rm          删除暂存区文件
+	
+	
+	
+	
+	
+
+	git remot -v                  查看远程仓库地址
+	git remote rm origin         删除关联的origin的远程库
+	ssh-keygen -t rsa             生成密钥
+	
+	
+	
+	
+	
